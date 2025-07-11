@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Encerrar - Gerenciador de Calçados</title>
+    <meta charset="utf-8">
+    <script src="js/js37.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .message {
+            margin: 20px 0;
+            padding: 15px;
+            background: #d4edda;
+            color: #155724;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sistema Encerrado</h1>
+    <div class="message">Você foi desconectado do sistema.</div>
+
+    <script>
+        // Limpa os dados da sessão
+        const calcado = new Calcado();
+        calcado.limparDados();
+
+        // Redireciona para login após 2 segundos
+        setTimeout(function () {
+            window.location.href = 'index.html';
+        }, 2000);
+    </script>
+</body>
+
+</html>
